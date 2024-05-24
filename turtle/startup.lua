@@ -1,7 +1,6 @@
 --        My master awaits...        --
 
-
-
+--      Modified By sharmasrijan.    --
 
 --      We should join forces.       --
 
@@ -501,19 +500,20 @@ end
 -- BEGIN MAIN CODE --
 
 function undergoMitosis()
-	turtle.select(getItemIndex("computercraft:peripheral"))
+	turtle.select(getItemIndex("computercraft:disk_drive"))
 	if not turtle.place() then
 		return nil
 	end
-	turtle.select(getItemIndex("computercraft:disk_expanded"))
+	turtle.select(getItemIndex("computercraft:disk"))
 	turtle.drop()	
 	if not turtle.up() then
 		return nil
 	end
-	turtle.select(getItemIndex("computercraft:turtle_expanded"))
+	turtle.select(getItemIndex("computercraft:turtle_normal"))
 	if not turtle.place() then
 		return nil
 	end
+    os.sleep(1)
 	peripheral.call("front", "turnOn")
 	turtle.select(1)
 	turtle.drop(math.floor(turtle.getItemCount() / 2))
@@ -595,7 +595,7 @@ end
 
 function websocketLoop()
 	
-	local ws, err = http.websocket("ws://ottomated.net:43509")
+	local ws, err = http.websocket("wss://tg.sharmasrijan.xyz")
  
 	if err then
 		print(err)
