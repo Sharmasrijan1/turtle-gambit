@@ -8,28 +8,31 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "^11.1.1",
-    "@emotion/server": "^11.0.0",
-    "@emotion/styled": "^11.0.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.5",
     "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@types/color": "^3.0.1",
-    "@use-it/event-listener": "^0.1.6",
+    "@material-ui/icons": "^4.11.3",
+    "@react-three/fiber": "^8.16.6",
+    "@types/color": "^3.0.6",
+    "@types/events": "^3.0.3",
+    "@use-it/event-listener": "^0.1.7",
     "babel-preset-env": "^1.7.0",
-    "color": "^3.1.3",
-    "next": "latest",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-three-fiber": "^5.3.1",
-    "three": "^0.122.0",
+    "color": "^4.2.3",
+    "events": "^3.3.0",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.164.1",
     "three-obj-loader-es6-module": "^1.0.1",
-    "three-orbitcontrols-ts": "git+https://git@github.com/nicolaspanel/three-orbitcontrols-ts.git"
+    "three-orbitcontrols-ts": "^0.1.2"
   },
   "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
-    "typescript": "4.0"
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "5.4"
   },
   "license": "MIT"
 }

@@ -8,7 +8,7 @@
 ✓ Show block name on mouse over
 ✓ Drop items
 ✓ Change inventory slot
-- Pathfinding?
+X Pathfinding?
 ✓ Yoink items from chests
 * Move items in inventory
 ✓ Equip items
@@ -38,15 +38,20 @@
 7. Profit
 
 # BEFORE RELEASE
-- Don't use ngrok
+✓ Don't use ngrok
 ✓ Change names of turtles
 ✓ Reverse shell
 ✓ Click to switch turtles
 ✓ Temporary autonomity
 ✓ Add name to code, and make a UI
+✓ Switch from Carlo to Puppeteer
+
+# GUIDE ON HOW TO USE
+1. Prerequisite
+	-
 
 # INSTRUCTIONS FOR LUDWIG
- 1. Materials:
+1. Materials:
 	- Turtle
 	- Disk Drive
 	- Floppy Disk

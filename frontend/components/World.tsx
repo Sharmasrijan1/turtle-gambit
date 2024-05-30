@@ -1,4 +1,4 @@
-import { Canvas, MeshProps, extend, useFrame, useThree, ReactThreeFiber, useLoader } from 'react-three-fiber';
+import { Canvas, MeshProps, extend, useFrame, useThree, ReactThreeFiber, useLoader } from '@react-three/fiber';
 import { useRef, useState, useMemo, useEffect, Suspense, HTMLProps, RefObject, SetStateAction, Dispatch, useContext } from 'react';
 import { Mesh, BoxBufferGeometry, Vector3, Quaternion, Euler, Raycaster, Vector2, Object3D } from 'three';
 import { OrbitControls } from 'three-orbitcontrols-ts';
