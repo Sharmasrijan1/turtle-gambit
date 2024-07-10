@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
 
 interface MyWindow extends Window {
 	exec<T>(index: number, code: string, ...args: any[]): Promise<T>;
-	refreshData(): void;
+	refreshData: () => void;
 	setWorld: Function;
 	setTurtles: Function;
 }
@@ -136,14 +136,18 @@ const IndexPage = () => {
 	const [world, setWorld] = useState<World>({});
 	const [turtleId, setTurtleId] = useState<number>(-1);
 
+	const refreshData = () => {
+		console.log('Refreshing data...');
+	};
+
 	useEffect(() => {
 		window.setTurtles = (array: any[]) => {
 			setTurtles(array.map(turtle => new Turtle(turtle)));
 		};
 		window.setWorld = setWorld;
+		window.refreshData = refreshData;
 
 		window.refreshData();
-
 	}, [setTurtles, setWorld]);
 
 	const selectedTurtle = turtles.find(t => t.id === turtleId);
